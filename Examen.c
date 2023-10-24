@@ -8,7 +8,9 @@ int main(void) { // se ingresa la funcion principal main//
     int i;
     float sum = 0.0; // se ingresa una variable la cual va tener decimales por eso se le asigna el valor de 0.0//
 
-    printf ("Ingrese un numero entero");// Solicita al usuario el número de elementos//
+    printf("Bienvenido al programa :)");
+    printf("Este programa va a calcular el promedio, el numero mayor y menor de una cantidad exacta de numeros ingresados por el usuario");
+    printf ("Ingrese un numero entero: ");// Solicita al usuario el número de elementos//
     scanf("%d", &N);// se lee los numero ingresados//
 
     printf("Introduce %d números: ", N);
@@ -26,6 +28,8 @@ int main(void) { // se ingresa la funcion principal main//
             }
         }
     }          
-            
+    
+    printf("Media: %.2f, Mayor: %d, Menor: %d\n", sum/N, mayor, menor); // Imprime la media la cual es la suma divido para el numero de n, el máximo y el mínimo
+
     return 0; // es el valor que el programa regresa si esta bien ejecutado//
 }
